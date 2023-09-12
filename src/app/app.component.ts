@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'EmmaChadiTP1';
-  colors: string = 'white';
+  colors: string='';
 
   public changeColor(color:string){
     this.colors = color;
