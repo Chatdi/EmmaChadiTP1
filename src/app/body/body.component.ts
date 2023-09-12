@@ -6,7 +6,6 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
   styleUrls: ['./body.component.scss']
 })
 export class BodyComponent {
-//@Input()body:string='white';
 @Output()event = new EventEmitter();
 public changeColor(value:string){
   this.event.emit(value);
