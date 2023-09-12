@@ -1,6 +1,8 @@
 <app-header></app-header>
 
 
-<app-body></app-body>
+<app-body (event)="changeColor($event)" [body]="colors"></app-body>
+
+
 
 <app-footer></app-footer>
