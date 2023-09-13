@@ -6,8 +6,11 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
   styleUrls: ['./body.component.scss']
 })
 export class BodyComponent {
+@Input()color : string='';
 @Output()event = new EventEmitter();
-public changeColor(value:string){
+public changeColorbtn(value:string){
   this.event.emit(value);
+  console.log(value);
 }
+listColors: string[]=['red','blue','green','orange'];
 }

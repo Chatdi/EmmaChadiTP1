@@ -1,5 +1,4 @@
-<!-- <div  id="content"> -->
-<div id="square">
+<!-- <div id="square">
   <table>
     <tr>
       <td><button (click)="changeColor('red')" class="button red"></button></td>
@@ -7,9 +6,12 @@
     </tr>
     <tr>
       <td><button (click)="changeColor('blue')" class="button blue"></button></td>
-      <td><button (click)="changeColor('yellow')" class="button yellow"></button></td>
+      <td><button (click)="changeColor('orange')" class="button orange"></button></td>
     </tr>
   </table>
+</div> -->
 
-<!-- </div> -->
+<div id="square">
+  <button *ngFor="let color of listColors" (click)="changeColorbtn(color)" [ngClass]="color" class="button">
+  </button>
 </div>
