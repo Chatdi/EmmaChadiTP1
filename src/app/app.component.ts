@@ -9,8 +9,5 @@ export class AppComponent {
   title = 'EmmaChadiTP1';
   colors: string = 'white';
 
-  public changeColor(color:string){
-    this.colors = color;
-  }
 }
 

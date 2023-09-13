@@ -1,15 +1,10 @@
 <div [ngClass]="body" id="content">
-<div id="square">
-  <table>
-    <tr>
-      <td><button (click)="changeColor('red')" class="button red"></button></td>
-      <td><button (click)="changeColor('green')" class="button green"></button></td>
-    </tr>
-    <tr>
-      <td><button (click)="changeColor('blue')" class="button blue"></button></td>
-      <td><button (click)="changeColor('yellow')" class="button yellow"></button></td>
-    </tr>
-  </table>
-
-</div>
+  <div id="square">
+<app-small-square
+        *ngFor="let color of colors"
+        [colorBtn] = "color"
+        [ngClass]="color"
+        (event)="changedColor($event)"
+      ></app-small-square>
+  </div>
 </div>
