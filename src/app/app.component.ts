@@ -7,10 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'EmmaChadiTP1';
-  colors: string='';
-
-  public changeColorBackground(newItem:string){
-    this.colors = newItem;
-  }
 }
 
