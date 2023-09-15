@@ -7,7 +7,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class SquareComponent {
 
-  public listColors: string[] = ['red', 'blue', 'green', 'orange'];
+  public listColors: string[] = ['red', 'green', 'blue', 'orange'];
 
   @Output() event = new EventEmitter();
 
