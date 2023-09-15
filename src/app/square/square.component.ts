@@ -13,6 +13,5 @@ export class SquareComponent {
 
   public changeColorBtn(value: string) {
     this.event.emit(value);
-    console.log(value);
   }
 }

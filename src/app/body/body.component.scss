@@ -1,3 +1,11 @@
+#fond {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .orange {
   background-color: darkorange;
 }
@@ -12,12 +20,4 @@
 
 .green {
   background-color: limegreen;
-}
-
-#fond {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
