@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-body',
@@ -6,10 +6,11 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
   styleUrls: ['./body.component.scss']
 })
 export class BodyComponent {
-  
-  colors: string='';
 
-  public changeColorBackground(newItem:string){
+  public colors: string = '';
+
+  public changeColorBackground(newItem: string) {
     this.colors = newItem;
   }
+
 }

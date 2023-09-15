@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-square',
@@ -7,11 +7,11 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
 })
 export class SquareComponent {
 
-  listColors: string[]=['red','blue','green','orange'];
-  
-  @Output()event = new EventEmitter();
+  public listColors: string[] = ['red', 'blue', 'green', 'orange'];
 
-  public changeColorbtn(value:string){
+  @Output() event = new EventEmitter();
+
+  public changeColorBtn(value: string) {
     this.event.emit(value);
     console.log(value);
   }
